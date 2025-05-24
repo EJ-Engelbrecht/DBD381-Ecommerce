@@ -1,3 +1,4 @@
+require('dotenv').config();
 const mongoose = require('mongoose');
 
 const {
@@ -12,8 +13,9 @@ const productData = require('./data/productdata');
 const reviewData = require('./data/reviewdata');
 const userData = require('./data/userdata');
 
-const dbName = "ecommerce";
-const uri = 'mongodb+srv://EJE:NYfdm93T71qvt1RG@dbd381-db.whlkqbu.mongodb.net/';
+const uri = process.env.MONGODB_URI;
+const dbName = process.env.DB_NAME;
+
 
 (async function initializeDatabase(){
     try {
