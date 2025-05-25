@@ -1,21 +1,18 @@
 # DBD381 E-Commerce NoSQL Project
 
----
 
-## 📚 Authors
+## Authors
 
 Bianca Grobler – Testing & Documentation  
 Markus Du Plessis – Design & Architecture  
 Ian Faasen – Evaluation & Recommendations
 Eduard Jacobus Engelbrecht – System Implementation  
 
----
 
 This project implements a NoSQL distributed database system for an e-commerce marketplace using **MongoDB** and **Mongoose (Node.js)**. The goal is to manage data for products, users, orders, and reviews in a scalable, modular architecture.
 
----
 
-## 📦 Project Structure
+##  Project Structure
 
 ```
 DBD381-Ecommerce/
@@ -31,7 +28,6 @@ DBD381-Ecommerce/
 ├── README.md           # This file containing project information
 ```
 
----
 
 ## Requirements
 
@@ -39,15 +35,13 @@ DBD381-Ecommerce/
 - MongoDB Atlas account
 - Internet connection
 
----
 
-## 🚀 Setup Instructions
+##  Setup Instructions
 
 ### 1. Clone or Extract the Project
 
 If downloaded as a `.zip`, extract and open the `DBD381-Ecommerce` folder.
 
----
 
 ### 2. Install Dependencies
 
@@ -55,7 +49,6 @@ If downloaded as a `.zip`, extract and open the `DBD381-Ecommerce` folder.
 npm install
 ```
 
----
 
 ### 3. Run the Project
 
@@ -68,7 +61,6 @@ This will:
 - Insert the sample data (if it doesn't already exist)
 - Disconnect automatically
 
----
 
 ## Collections Inserted
 
@@ -79,7 +71,6 @@ This will:
 
 Each contains **10 well-structured sample documents**.
 
----
 
 ## Testing & Verification
 
@@ -88,20 +79,17 @@ You can verify the inserted data using **MongoDB Compass**:
 2. Open the `ecommerce` database.
 3. View your 4 collections and documents.
 
----
 
 ## Online Use
 
 This code is designed to be able to use online at distrubted locations so that various users can access the data. This is achieved by the URI for the database being set to a remote MongoDB(Atlas) server.
 
 
----
 
 ## Notes
 
 - Each insert function checks for existing IDs before inserting.
 - The project is modular and cleanly structured for scaling.
 
----
 
 
