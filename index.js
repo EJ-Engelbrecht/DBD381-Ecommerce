@@ -6,7 +6,29 @@ const {
     InsertProductData,
     InsertReviewData,
     InsertUserData
-} = require('./populate/insertData');
+} = require('./CRUD/insertData');
+const {
+    ReadOrderData,
+    ReadProductData,
+    ReadReviewData,
+    ReadUserData
+} = require('./CRUD/readData');
+
+const {
+    UpdateOrderData,
+    UpdateProductData,
+    UpdateReviewData,
+    UpdateUserData
+} = require('./CRUD/updateData');
+
+const {
+    DeleteOrderData,
+    DeleteProductData,
+    DeleteReviewData,
+    DeleteUserData
+} = require('./CRUD/deleteData');
+
+
 
 const orderData = require('./data/orderdata');
 const productData = require('./data/productdata');
@@ -22,16 +44,31 @@ const dbName = process.env.DB_NAME;
     await mongoose.connect(uri, {
         dbName: "ecommerce" 
     });
-
-
         console.log(`Connected to MongoDB: ${dbName}`);
 
+        // INSERT
         await InsertOrderData(orderData);
         await InsertProductData(productData);
         await InsertReviewData(reviewData);
         await InsertUserData(userData);
+        console.log('-------------------------------------------------------------------------------------------------------------------------')
+        // READ
+        await ReadOrderData();
+        await ReadProductData();
+        await ReadReviewData();
+        await ReadUserData();
+        console.log('-------------------------------------------------------------------------------------------------------------------------')
         
-        console.log("All data added successfully")
+        // UPDATE (as example)
+        await UpdateProductData([{ _id: productData[0]._id, price: 250 }]);
+        console.log('-------------------------------------------------------------------------------------------------------------------------')
+        
+        // DELETE (as example)
+        await DeleteReviewData([reviewData[0]._id]);
+        console.log('-------------------------------------------------------------------------------------------------------------------------')
+        
+
+        console.log("All operations completed successfully")
     } catch (error) {
         console.log("Database couldn't connect: " + error)
     }finally{
