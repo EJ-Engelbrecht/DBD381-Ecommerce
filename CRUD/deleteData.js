@@ -30,7 +30,6 @@ async function DeleteReviewData(ids) {
     console.table([data]);
     const result = await Review.findByIdAndDelete(id);
     console.log(result ? `Deleted review: ${result._id}` : `Review not found: ${id}`);
-    
   }
 }
 
