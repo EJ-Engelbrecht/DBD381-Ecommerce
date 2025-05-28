@@ -3,10 +3,11 @@
 
 ## Authors
 
+Eduard Jacobus Engelbrecht – System Implementation  
 Bianca Grobler – Testing & Documentation  
 Markus Du Plessis – Design & Architecture  
 Ian Faasen – Evaluation & Recommendations 
-Eduard Jacobus Engelbrecht – System Implementation  
+
 
 
 This project implements a NoSQL distributed database system for an e-commerce marketplace using **MongoDB** and **Mongoose (Node.js)**. The goal is to manage data for products, users, orders, and reviews in a scalable, modular architecture.
