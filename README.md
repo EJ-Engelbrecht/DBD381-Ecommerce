@@ -5,7 +5,7 @@
 
 Bianca Grobler – Testing & Documentation  
 Markus Du Plessis – Design & Architecture  
-Ian Faasen – Evaluation & Recommendations
+Ian Faasen – Evaluation & Recommendations 
 Eduard Jacobus Engelbrecht – System Implementation  
 
 
