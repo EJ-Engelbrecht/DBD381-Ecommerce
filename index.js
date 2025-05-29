@@ -60,7 +60,7 @@ const dbName = process.env.DB_NAME;
         console.log('-------------------------------------------------------------------------------------------------------------------------')
         
         // UPDATE (as example)
-        await UpdateProductData([{ _id: productData[0]._id, price: 250 }]);
+        await UpdateProductData([{ _id: productData[0]._id, price: 999 }]);
         console.log('-------------------------------------------------------------------------------------------------------------------------')
         
         // DELETE (as example)
